@@ -1,0 +1,9 @@
+.edit-tools {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    color: #2C3E50;
+    z-index: 1031;
+    padding: 0px 10px 10px 10px;
+}

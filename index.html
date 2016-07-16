@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <script src="https://app.simpla.io"></script>
+    <script>
+      Simpla('B1t9BpVv');//--YOUR SIMPLA PROJECT ID--'); // replace with your Simpla project ID
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top" class="index">
@@ -41,7 +46,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">
+                    <simpla-text gid="site-title" placeholder="Start Bootstrap"></simpla-text>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,13 +58,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">
+                            <simpla-text gid="item1" placeholder="Portfolio"></simpla-text>
+                        </a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#about">
+                            <simpla-text gid="item2" placeholder="About"></simpla-text>
+                        </a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">
+                            <simpla-text gid="item3" placeholder="Contact"></simpla-text>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -66,28 +79,36 @@
         <!-- /.container-fluid -->
     </nav>
 
+
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Start Bootstrap</span>
-                        <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+    <simpla-block sid="hero">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <simpla-img sid="profile" class="img-responsive" alt=""></simpla-img>
+                
+                        <div class="intro-text">
+                            <span class="name">
+                                <simpla-text sid="title" placeholder="Start Bootstrap"></simpla-text>
+                            </span>
+                            <hr class="star-light">
+                            <simpla-text sid="subtitle" placeholder="Web Developer - Graphic Artist - User Experience Designer" inline class="skills"></simpla-text>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </simpla-block>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>
+                        <simpla-text gid="item1" placeholder="Portfolio"></simpla-text>
+                    </h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -99,7 +120,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                        <simpla-block sid="portfolio-1" class="img-responsive">
+                            <simpla-img sid="image" placeholder="http://placekitten.com/g/360/260" class="img-responsive" style="width: 360px; height: 260px;"></simpla-img>
+                        </simpla-block>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -109,7 +132,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <simpla-block sid="portfolio-2" class="img-responsive">
+                            <simpla-img sid="image" placeholder="http://placekitten.com/g/360/260" class="img-responsive" style="width: 360px; height: 260px;"></simpla-img>
+                        </simpla-block>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -119,7 +144,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <simpla-block sid="portfolio-3" class="img-responsive">
+                            <simpla-img sid="image" placeholder="http://placekitten.com/g/360/260" class="img-responsive" style="width: 360px; height: 260px;"></simpla-img>
+                        </simpla-block>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -129,7 +156,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
+                        <simpla-block sid="portfolio-4" class="img-responsive">
+                            <simpla-img sid="image" placeholder="http://placekitten.com/g/360/260" class="img-responsive" style="width: 360px; height: 260px;"></simpla-img>
+                        </simpla-block>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -139,7 +168,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
+                        <simpla-block sid="portfolio-5" class="img-responsive">
+                            <simpla-img sid="image" placeholder="http://placekitten.com/g/360/260" class="img-responsive" style="width: 360px; height: 260px;"></simpla-img>
+                        </simpla-block>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -149,7 +180,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+                        <simpla-block sid="portfolio-6" class="img-responsive">
+                            <simpla-img sid="image" placeholder="http://placekitten.com/g/360/260" class="img-responsive" style="width: 360px; height: 260px;"></simpla-img>
+                        </simpla-block>
                     </a>
                 </div>
             </div>
@@ -161,21 +194,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2><simpla-text gid="item2" placeholder="About"></simpla-text></h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p><simpla-text gid="item2-content" placeholder="Freelancer is a free bootstrap theme created by Start Bootstrap."></simpla-text></p>
                 </div>
             </div>
         </div>
@@ -186,7 +211,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2><simpla-text gid="item3" placeholder="Contact Me"></simpla-text></h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -237,52 +262,57 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+    <simpla-block gid="footer">
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <simpla-block sid="location">
+                            <div class="footer-col col-md-4">
+                                <h3>
+                                    <simpla-text sid="title" placeholder="Location"></simpla-text>
+                                </h3>
+                                <p>
+                                    <simpla-text sid="body" inline placeholder="3481 Melrose Place"></simpla-text>
+                                </p>
+                            </div>
+                        </simpla-block>
+
+                        <simpla-block sid="social">
+                            <div class="footer-col col-md-4">
+                                <h3>
+                                    <simpla-text sid="title" placeholder="Around the Web"></simpla-text>
+                                </h3>
+                                <ul class="list-inline" id="social-links">
+
+                                </ul>
+                            </div>
+                        </simpla-block>
+
+                        <simpla-group sid="about">
+                            <div class="footer-col col-md-4">
+                                <h3>
+                                    <simpla-text sid="title" placeholder="About Freelancer"></simpla-text>
+                                </h3>
+                                <p>
+                                    <simpla-text sid="body" placeholder="Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap."></simpla-text>
+                                </p>
+                            </div>
+                        </simpla-group>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <simpla-text sid="copyright" placeholder="Copyright &copy; Your Website 2016"></simpla-text>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </simpla-block>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
@@ -304,24 +334,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <simpla-block sid="portfolio-1">
+                                <h2><simpla-text sid="title" placeholder="Project Title"></simpla-text></h2>
+                                <hr class="star-primary">
+                                <simpla-img sid="image" class="img-responsive img-centered" alt="" placeholder="#64d8e8" style="width: 720px; height: 520px;"></simpla-img>
+                                <simpla-text sid="body" placeholder="Use this area of the page to describe your project."></simpla-text>
+                                <simpla-text sid="details" class="item-details" placeholder="Any extra details about the project?"></simpla-text>
+                            </simpla-block>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -341,24 +360,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <simpla-block sid="portfolio-2">
+                                <h2><simpla-text sid="title" placeholder="Project Title"></simpla-text></h2>
+                                <hr class="star-primary">
+                                <simpla-img sid="image" class="img-responsive img-centered" alt="" placeholder="#64d8e8" style="width: 720px; height: 520px;"></simpla-img>
+                                <simpla-text sid="body" placeholder="Use this area of the page to describe your project."></simpla-text>
+                                <simpla-text sid="details" class="item-details" placeholder="Any extra details about the project?"></simpla-text>
+                            </simpla-block>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -378,24 +386,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <simpla-block sid="portfolio-3">
+                                <h2><simpla-text sid="title" placeholder="Project Title"></simpla-text></h2>
+                                <hr class="star-primary">
+                                <simpla-img sid="image" class="img-responsive img-centered" alt="" placeholder="#64d8e8" style="width: 720px; height: 520px;"></simpla-img>
+                                <simpla-text sid="body" placeholder="Use this area of the page to describe your project."></simpla-text>
+                                <simpla-text sid="details" class="item-details" placeholder="Any extra details about the project?"></simpla-text>
+                            </simpla-block>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -415,24 +412,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <simpla-block sid="portfolio-4">
+                                <h2><simpla-text sid="title" placeholder="Project Title"></simpla-text></h2>
+                                <hr class="star-primary">
+                                <simpla-img sid="image" class="img-responsive img-centered" alt="" placeholder="#64d8e8" style="width: 720px; height: 520px;"></simpla-img>
+                                <simpla-text sid="body" placeholder="Use this area of the page to describe your project."></simpla-text>
+                                <simpla-text sid="details" class="item-details" placeholder="Any extra details about the project?"></simpla-text>
+                            </simpla-block>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -452,24 +438,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <simpla-block sid="portfolio-5">
+                                <h2><simpla-text sid="title" placeholder="Project Title"></simpla-text></h2>
+                                <hr class="star-primary">
+                                <simpla-img sid="image" class="img-responsive img-centered" alt="" placeholder="#64d8e8" style="width: 720px; height: 520px;"></simpla-img>
+                                <simpla-text sid="body" placeholder="Use this area of the page to describe your project."></simpla-text>
+                                <simpla-text sid="details" class="item-details" placeholder="Any extra details about the project?"></simpla-text>
+                            </simpla-block>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -488,25 +463,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <simpla-block sid="portfolio-6">
+                                <h2><simpla-text sid="title" placeholder="Project Title"></simpla-text></h2>
+                                <hr class="star-primary">
+                                <simpla-img sid="image" class="img-responsive img-centered" alt="" placeholder="#64d8e8" style="width: 720px; height: 520px;"></simpla-img>
+                                <simpla-text sid="body" placeholder="Use this area of the page to describe your project."></simpla-text>
+                                <simpla-text sid="details" class="item-details" placeholder="Any extra details about the project?"></simpla-text>
+                            </simpla-block>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -531,6 +494,7 @@
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
 
+    <!-- Simpla specific JS -->
+    <script src="js/custom.js"></script>
 </body>
-
 </html>
