@@ -7,3 +7,14 @@
     z-index: 1031;
     padding: 0px 10px 10px 10px;
 }
+
+
+
+.flex-container {
+  display: -webkit-inline-flex; /* Safari */
+  display: inline-flex;
+  -webkit-justify-content: center; /* Safari */
+justify-content:         center;
+-webkit-flex-wrap: wrap; /* Safari */
+flex-wrap:         wrap;
+}
