@@ -18,3 +18,8 @@ justify-content:         center;
 -webkit-flex-wrap: wrap; /* Safari */
 flex-wrap:         wrap;
 }
+
+.media {
+  margin-top: 10px;
+  margin-bottom:10px;
+}
